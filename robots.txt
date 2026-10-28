@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yeongildae-xtbr.vercel.app/sitemap.xml
