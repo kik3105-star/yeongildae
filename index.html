@@ -1,727 +1,737 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ko">
-<머리>
- <meta charset=>UTF-8">
- <meta 이름="viewport" 콘텐츠="width=장치 너비, 초기 스케일=1.0">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 네이버 사이트 소유확인 -->
- <meta name="naver-site-verification" content="fc9c69f9ae9e7905698b4b9d93594b1c568d5628">
+<meta name="naver-site-verification" content="fc9c69f9ae9e7905698b4b9d93594b1c568d5628">
 
- <title>포항 영일대횟집 | 대게·대방어·자연산회·물회</title>
+<title>포항 영일대횟집 | 대게·대방어·자연산회·물회</title>
 
- <meta 이름="desc 설명" 콘텐츠="포항 영일대해수욕장 인근 영일대횟집. 대게, 대방어, 참가자미회, 자연산 도다리회, 물회와 신선한 해산물을 즐길 수 있으며 가족식사와 단체모임이 가능합니다. 환호공원, 스페이스워크, 죽도시장, 라한호텔에서 포항 여행 중 방문하기 좋은 횟집입니다.">
+<meta name="description" content="포항 영일대해수욕장 인근 영일대횟집. 대게, 대방어, 참가자미회, 자연산 도다리회, 물회와 신선한 해산물을 즐길 수 있으며 가족식사와 단체모임이 가능합니다. 환호공원, 스페이스워크, 죽도시장, 라한호텔 포항 여행 동선에서 방문하기 좋은 횟집입니다.">
 
- <meta 이름="robots" 콘텐츠="인덱스, 팔로우">
+<meta name="robots" content="index,follow">
 
-  <!-- 그래프 열기 -->
- <meta 속성="og:type" 콘텐츠="website">
- <meta property="og:title" content="포항 영일대횟집 | 대게·대방어·자연산회·물회">
- <meta property="og:description" content="포항 영일대해수욕장 인근 영일대횟집입니다. 대게, 대방어, 참가자미회, 자연산 도다리회, 물회와 함께 환호공원·스페이스워크 방문 후 식사하기 좋은 포항 횟집입니다.">
- <meta 속성="og:url" 콘텐츠="https://youngildae-xtbr.vercel.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="포항 영일대횟집 | 대게·대방어·자연산회·물회">
+<meta property="og:description" content="포항 영일대해수욕장 인근 영일대횟집입니다. 대게, 대방어, 참가자미회, 자연산 도다리회, 물회와 함께 환호공원·스페이스워크 방문 후 식사하기 좋은 포항 횟집입니다.">
+<meta property="og:url" content="https://yeongildae-xtbr.vercel.app">
 
-  <스타일.>
- * {
- 박스 sizing: 테두리 박스;
- 여백: 0;
- 패딩: 0;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    HTML {
- 스크롤 behavior: 매끄럽습니다;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    몸 {
- 배경: #080808;
- color: #f5f5f5;
- 폰트 패밀리: 아리알, "노토 산스 KR", 산세리프;
- 선 높이: 1.7;
- 패딩 하의: 78 px;
-    }
+body {
+  background: #070707;
+  color: #f5f5f5;
+  font-family: Arial, "Noto Sans KR", sans-serif;
+  line-height: 1.7;
+  padding-bottom: 72px;
+}
 
-    a {
- 색상: 상속;
- 텍스트 장식: 없음;
-    }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
- .wrap {
- 너비: 최소(100%, 760 px);
- 여백: 0 auto;
- 배경: #080808;
- 최소 높이: 100vh;
-    }
+.wrap {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  background: #080808;
+  min-height: 100vh;
+}
 
-    /* 상단 */
- .상위 {
- 포지션: 끈적임;
- 상단: 0;
- z-인덱스: 50;
- 높이: 64 px;
- 패딩: 0 20 px;
- 디스플레이: 플렉스;
- 정렬 items: 중심;
- 정당화 내용: 공간 간;
- background: rgba(5,5,5,.94);
- 테두리 하단: 1 px 솔리드 #242424;
- 배경 필터: 블러(12 px);
-    }
+.top {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: 64px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(5,5,5,.95);
+  border-bottom: 1px solid #252525;
+}
 
-    .brand {
-      font-size: 21px;
-      font-weight: 800;
-      letter-spacing: -1px;
-    }
+.brand {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
 
-    .top-call {
-      font-size: 13px;
-      color: #d7b66c;
-      border: 1px solid #806a3c;
-      border-radius: 30px;
-      padding: 7px 13px;
-    }
+.top-call {
+  color: #d3b36b;
+  border: 1px solid #76623b;
+  border-radius: 30px;
+  padding: 7px 13px;
+  font-size: 13px;
+}
 
-    /* 메인 히어로 */
-    .hero {
-      min-height: 620px;
-      display: flex;
-      align-items: flex-end;
-      position: relative;
-      overflow: hidden;
-      padding: 55px 24px;
-      background:
-        radial-gradient(circle at 75% 25%, rgba(191,151,76,.20), transparent 30%),
-        linear-gradient(145deg, #202020 0%, #080808 58%, #000 100%);
-    }
+.hero {
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 55px 24px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 75% 20%, rgba(197,155,76,.22), transparent 30%),
+    linear-gradient(145deg, #292929 0%, #0b0b0b 55%, #000 100%);
+}
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(to bottom, rgba(0,0,0,.08), rgba(0,0,0,.35) 45%, rgba(0,0,0,.88));
-    }
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.05),
+    rgba(0,0,0,.25) 45%,
+    rgba(0,0,0,.9)
+  );
+}
 
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-    }
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
 
-    .eyebrow {
-      display: inline-block;
-      color: #d7b66c;
-      font-size: 13px;
-      letter-spacing: 2px;
-      margin-bottom: 14px;
-    }
+.eyebrow {
+  color: #d3b36b;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
 
-    h1 {
-      font-size: clamp(42px, 10vw, 68px);
-      line-height: 1.08;
-      letter-spacing: -3px;
-      margin-bottom: 18px;
-    }
+h1 {
+  font-size: clamp(43px, 11vw, 68px);
+  line-height: 1.07;
+  letter-spacing: -3px;
+  margin: 13px 0 18px;
+}
 
-    .hero-copy {
-      color: #d0d0d0;
-      font-size: 17px;
-      margin-bottom: 28px;
-    }
+.hero-copy {
+  color: #d1d1d1;
+  font-size: 17px;
+  margin-bottom: 22px;
+}
 
-    .hero-menu {
-      color: #eee;
-      font-size: 14px;
-      line-height: 2;
-      border-left: 2px solid #b79650;
-      padding-left: 14px;
-      margin-bottom: 28px;
-    }
+.hero-menu {
+  border-left: 2px solid #bd9b52;
+  padding-left: 14px;
+  color: #eee;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 28px;
+}
 
-    .hero-buttons {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
+.hero-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
 
-    .btn {
-      min-height: 50px;
-      border-radius: 5px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 700;
-      font-size: 14px;
-    }
+.btn {
+  min-height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+}
 
-    .btn-gold {
-      background: #c3a15b;
-      color: #080808;
-    }
+.btn-gold {
+  background: #c2a15b;
+  color: #090909;
+}
 
-    .btn-dark {
-      border: 1px solid #555;
-      background: rgba(20,20,20,.85);
-    }
+.btn-dark {
+  background: #151515;
+  border: 1px solid #4b4b4b;
+}
 
-    /* 공통 섹션 */
-    section {
-      padding: 72px 20px;
-      border-bottom: 1px solid #202020;
-    }
+section {
+  padding: 70px 20px;
+  border-bottom: 1px solid #202020;
+}
 
-    .section-label {
-      color: #b99a58;
-      font-size: 12px;
-      letter-spacing: 2px;
-      font-weight: 700;
-      margin-bottom: 9px;
-    }
+.section-label {
+  color: #b99b5b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
 
-    h2 {
-      font-size: 30px;
-      line-height: 1.3;
-      letter-spacing: -1.5px;
-      margin-bottom: 13px;
-    }
+h2 {
+  font-size: 29px;
+  line-height: 1.3;
+  letter-spacing: -1.5px;
+  margin-bottom: 13px;
+}
 
-    .desc {
-      color: #aaa;
-      font-size: 15px;
-      margin-bottom: 30px;
-    }
+.desc {
+  color: #aaa;
+  font-size: 15px;
+  margin-bottom: 29px;
+}
 
-    /* 메뉴 */
-    .menu-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+}
 
-    .menu-card {
-      min-height: 220px;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid #292929;
-      border-radius: 8px;
-      background:
-        radial-gradient(circle at 70% 20%, #343434, #151515 55%, #0b0b0b);
-    }
+.menu-card {
+  min-height: 210px;
+  padding: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #2d2d2d;
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 70% 20%, #3a3a3a, #171717 52%, #0a0a0a);
+}
 
-    .menu-card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(transparent 25%, rgba(0,0,0,.88));
-    }
+.menu-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 25%, rgba(0,0,0,.9));
+}
 
-    .menu-card > * {
-      position: relative;
-      z-index: 2;
-    }
+.menu-card small,
+.menu-card h3 {
+  position: relative;
+  z-index: 2;
+}
 
-    .menu-card small {
-      color: #c2a360;
-      margin-bottom: 4px;
-    }
+.menu-card small {
+  color: #c3a35f;
+  font-size: 11px;
+}
 
-    .menu-card h3 {
-      font-size: 21px;
-      line-height: 1.3;
-    }
+.menu-card h3 {
+  font-size: 21px;
+  line-height: 1.3;
+  margin-top: 4px;
+}
 
-    /* 큰 이미지형 섹션 */
-    .feature {
-      min-height: 430px;
-      padding: 38px 24px;
-      display: flex;
-      align-items: flex-end;
-      position: relative;
-      background:
-        radial-gradient(circle at 30% 25%, rgba(189,148,70,.22), transparent 28%),
-        linear-gradient(135deg, #262626, #080808);
-    }
+.feature {
+  min-height: 430px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 24px;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(193,150,70,.23), transparent 28%),
+    linear-gradient(140deg, #292929, #090909);
+}
 
-    .feature::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(transparent, rgba(0,0,0,.9));
-    }
+.feature::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 20%, rgba(0,0,0,.92));
+}
 
-    .feature-inner {
-      position: relative;
-      z-index: 2;
-    }
+.feature-inner {
+  position: relative;
+  z-index: 2;
+}
 
-    .feature h2 {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
+.feature h2 {
+  font-size: 34px;
+}
 
-    .feature p {
-      color: #ccc;
-    }
+.feature p {
+  color: #ccc;
+}
 
-    /* 단체 */
-    .group-box {
-      padding: 25px;
-      border: 1px solid #343434;
-      background: #111;
-      border-radius: 8px;
-    }
+.group-box {
+  padding: 25px;
+  background: #111;
+  border: 1px solid #343434;
+  border-radius: 8px;
+}
 
-    .group-number {
-      color: #d2af63;
-      font-size: 27px;
-      font-weight: 800;
-      margin: 13px 0;
-    }
+.group-number {
+  color: #d3af62;
+  font-size: 27px;
+  font-weight: 800;
+  margin: 10px 0 17px;
+}
 
-    /* 여행 동선 */
-    .travel-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
+.travel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
 
-    .travel {
-      min-height: 170px;
-      border-radius: 7px;
-      border: 1px solid #292929;
-      padding: 18px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      background: linear-gradient(145deg, #292929, #101010 60%);
-    }
+.travel {
+  min-height: 170px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid #2c2c2c;
+  border-radius: 7px;
+  background: linear-gradient(145deg, #292929, #101010 60%);
+}
 
-    .travel small {
-      color: #bca064;
-    }
+.travel small {
+  color: #bda064;
+}
 
-    .travel strong {
-      font-size: 18px;
-      margin-top: 3px;
-    }
+.travel strong {
+  font-size: 18px;
+  margin-top: 3px;
+}
 
-    /* 키워드 */
-    .keywords {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 
-    .keyword {
-      padding: 9px 12px;
-      border: 1px solid #373737;
-      background: #111;
-      border-radius: 50px;
-      color: #ccc;
-      font-size: 13px;
-    }
+.keyword {
+  padding: 9px 12px;
+  background: #111;
+  border: 1px solid #373737;
+  border-radius: 50px;
+  color: #ccc;
+  font-size: 13px;
+}
 
-    /* 방문정보 */
-    .info-row {
-      padding: 17px 0;
-      border-bottom: 1px solid #272727;
-    }
+.info-row {
+  padding: 17px 0;
+  border-bottom: 1px solid #272727;
+}
 
-    .info-row small {
-      display: block;
-      color: #9b824d;
-      margin-bottom: 3px;
-    }
+.info-row small {
+  display: block;
+  color: #a08750;
+  margin-bottom: 3px;
+}
 
-    .info-row strong {
-      font-size: 16px;
-    }
+.info-row strong {
+  font-size: 16px;
+}
 
-    /* FAQ */
-    details {
-      border-top: 1px solid #292929;
-      padding: 19px 0;
-    }
+details {
+  padding: 19px 0;
+  border-top: 1px solid #292929;
+}
 
-    details:last-child {
-      border-bottom: 1px solid #292929;
-    }
+details:last-child {
+  border-bottom: 1px solid #292929;
+}
 
-    summary {
-      cursor: pointer;
-      font-weight: 700;
-      font-size: 16px;
-    }
+summary {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
 
-    details p {
-      color: #aaa;
-      padding-top: 12px;
-      font-size: 14px;
-    }
+details p {
+  padding-top: 12px;
+  color: #aaa;
+  font-size: 14px;
+}
 
-    footer {
-      padding: 50px 20px 100px;
-      text-align: center;
-      color: #777;
-      font-size: 12px;
-    }
+footer {
+  padding: 50px 20px 100px;
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+}
 
-    footer strong {
-      display: block;
-      color: #ddd;
-      font-size: 20px;
-      margin-bottom: 8px;
-    }
+footer strong {
+  display: block;
+  color: #ddd;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
 
-    /* 하단 고정 메뉴 */
-    .fixed-bar {
-      position: fixed;
-      z-index: 100;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: min(100%, 760px);
-      display: grid;
-      grid-template-columns: 1fr 1.3fr 1fr;
-      height: 68px;
-      background: #080808;
-      border-top: 1px solid #303030;
-    }
+.fixed-bar {
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: min(100%, 760px);
+  height: 68px;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  background: #080808;
+  border-top: 1px solid #303030;
+}
 
-    .fixed-bar a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: 700;
-      border-right: 1px solid #252525;
-    }
+.fixed-bar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #252525;
+  font-size: 14px;
+  font-weight: 700;
+}
 
-    .fixed-bar a:nth-child(2) {
-      background: #b7934c;
-      color: #080808;
-    }
+.fixed-bar a:nth-child(2) {
+  background: #b7934c;
+  color: #080808;
+}
 
-    @media (max-width: 420px) {
-      .hero {
-        min-height: 570px;
-      }
+@media (max-width: 420px) {
+  .hero {
+    min-height: 570px;
+  }
 
-      .menu-card {
-        min-height: 190px;
-      }
+  .menu-card {
+    min-height: 190px;
+  }
 
-      h2 {
-        font-size: 27px;
-      }
-    }
-  </style>
+  h2 {
+    font-size: 27px;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <div class="wrap">
 
-  <header class="top">
-    <div class="brand">영일대횟집</div>
-    <a class="top-call" href="tel:0542420080">054-242-0080</a>
-  </header>
+<header class="top">
+  <div class="brand">영일대횟집</div>
+  <a class="top-call" href="tel:0542420080">054-242-0080</a>
+</header>
 
-  <!-- 메인 -->
-  <div class="hero">
-    <div class="hero-content">
-      <span class="eyebrow">POHANG · YEONGILDAE</span>
+<div class="hero">
+  <div class="hero-content">
 
-      <h1>포항<br>영일대횟집</h1>
+    <div class="eyebrow">POHANG · YEONGILDAE</div>
 
-      <p class="hero-copy">
-        바다 가까이에서 만나는<br>
-        신선한 자연산회와 해산물
-      </p>
+    <h1>포항<br>영일대횟집</h1>
 
-      <div class="hero-menu">
-        대게 · 대방어 · 참가자미회<br>
-        자연산 도다리회 · 물회 · 해산물
-      </div>
+    <p class="hero-copy">
+      바다 가까이에서 만나는<br>
+      신선한 자연산회와 해산물
+    </p>
 
-      <div class="hero-buttons">
-        <a class="btn btn-gold"
-           href="https://m.place.naver.com/restaurant/37725868/home?entry=pll">
-          네이버 플레이스
-        </a>
-
-        <a class="btn btn-dark" href="tel:0542420080">
-          전화 문의
-        </a>
-      </div>
+    <div class="hero-menu">
+      대게 · 대방어 · 참가자미회<br>
+      자연산 도다리회 · 물회 · 해산물
     </div>
+
+    <div class="hero-buttons">
+      <a class="btn btn-gold"
+         href="https://m.place.naver.com/restaurant/37725868/home?entry=pll">
+        네이버 플레이스
+      </a>
+
+      <a class="btn btn-dark" href="tel:0542420080">
+        전화 문의
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<section>
+  <div class="section-label">SIGNATURE MENU</div>
+  <h2>영일대횟집 대표 메뉴</h2>
+
+  <p class="desc">
+    포항 여행 중 즐기기 좋은 대게부터 자연산회와 물회까지
+    영일대횟집의 주요 메뉴를 만나보세요.
+  </p>
+
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <small>YEONGILDAE SPECIAL</small>
+      <h3>대게<br>스페셜 코스</h3>
+    </div>
+
+    <div class="menu-card">
+      <small>SEASONAL</small>
+      <h3>대방어회</h3>
+    </div>
+
+    <div class="menu-card">
+      <small>NATURAL SASHIMI</small>
+      <h3>참가자미회</h3>
+    </div>
+
+    <div class="menu-card">
+      <small>NATURAL SASHIMI</small>
+      <h3>자연산<br>도다리회</h3>
+    </div>
+
+    <div class="menu-card">
+      <small>POHANG MULHOE</small>
+      <h3>참가자미<br>물회</h3>
+    </div>
+
+    <div class="menu-card">
+      <small>SEAFOOD</small>
+      <h3>신선한<br>해산물</h3>
+    </div>
+
+  </div>
+</section>
+
+<div class="feature">
+  <div class="feature-inner">
+    <div class="section-label">FRESH FROM THE SEA</div>
+
+    <h2>
+      바다에서 식탁까지,<br>
+      신선함을 담습니다.
+    </h2>
+
+    <p>
+      가게 맞은편 두호어촌계를 통해
+      어부들이 직접 건져 올린 신선한 자연산 생선을
+      만나볼 수 있습니다.
+    </p>
+  </div>
+</div>
+
+<section>
+  <div class="section-label">POHANG MULHOE</div>
+
+  <h2>
+    포항에서 즐기는<br>
+    참가자미 물회
+  </h2>
+
+  <p class="desc">
+    채 썬 오이와 배 위에 참가자미회를 올리고
+    김가루와 깨소금을 더합니다.
+    새빨간 살얼음 과일 육수는 따로 제공되어
+    취향에 맞게 즐길 수 있습니다.
+  </p>
+
+  <div class="group-box">
+    <strong>포항 전통 방식도 가능합니다.</strong>
+
+    <p class="desc" style="margin:8px 0 0;">
+      고추장 양념에 비빈 뒤 물을 부어 먹는
+      포항식 물회를 원하시면 고추장을 별도로 요청해 주세요.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">GROUP DINING</div>
+
+  <h2>
+    가족식사부터<br>
+    단체모임까지
+  </h2>
+
+  <p class="desc">
+    가족식사, 회식, 송년회와 연말모임 등
+    인원에 맞춰 이용할 수 있는 좌석을 마련하고 있습니다.
+  </p>
+
+  <div class="group-box">
+
+    <small>ROOM</small>
+    <div class="group-number">4 ~ 16명</div>
+
+    <small>GROUP SEATING</small>
+    <div class="group-number">16 ~ 84명</div>
+
+    <p class="desc" style="margin:8px 0 0;">
+      인원이 많은 모임은 방문 전 좌석과 메뉴를 확인해 주세요.
+    </p>
+
+  </div>
+</section>
+
+<section>
+  <div class="section-label">POHANG TRAVEL</div>
+
+  <h2>
+    포항 여행과 함께<br>
+    찾기 좋은 영일대횟집
+  </h2>
+
+  <p class="desc">
+    영일대해수욕장과 환호공원, 스페이스워크를 둘러보거나
+    죽도시장과 라한호텔 포항을 이용하는 여행 동선에서
+    식사 장소를 찾을 때 참고해 보세요.
+  </p>
+
+  <div class="travel-grid">
+
+    <div class="travel">
+      <small>YEONGILDAE BEACH</small>
+      <strong>영일대해수욕장</strong>
+    </div>
+
+    <div class="travel">
+      <small>HWANHO PARK</small>
+      <strong>환호공원</strong>
+    </div>
+
+    <div class="travel">
+      <small>SPACE WALK</small>
+      <strong>스페이스워크</strong>
+    </div>
+
+    <div class="travel">
+      <small>JUKDO MARKET</small>
+      <strong>죽도시장</strong>
+    </div>
+
+    <div class="travel">
+      <small>LAHAN HOTEL</small>
+      <strong>라한호텔 포항</strong>
+    </div>
+
+    <div class="travel">
+      <small>POHANG TRAVEL</small>
+      <strong>포항 북구 여행</strong>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="section-label">SEARCH GUIDE</div>
+
+  <h2>영일대횟집 방문 안내</h2>
+
+  <p class="desc">
+    포항 영일대에서 횟집이나 대게, 물회, 자연산회를 찾는 분들과
+    영일대해수욕장·환호공원·스페이스워크 주변 식사 장소를 찾는
+    분들을 위한 영일대횟집 안내입니다.
+  </p>
+
+  <div class="keywords">
+    <span class="keyword">포항 영일대 횟집</span>
+    <span class="keyword">포항 영일대 맛집</span>
+    <span class="keyword">포항 대게</span>
+    <span class="keyword">영일대 대게</span>
+    <span class="keyword">포항 물회</span>
+    <span class="keyword">참가자미 물회</span>
+    <span class="keyword">포항 대방어</span>
+    <span class="keyword">포항 자연산회</span>
+    <span class="keyword">환호공원 맛집</span>
+    <span class="keyword">스페이스워크 맛집</span>
+    <span class="keyword">죽도시장 근처 맛집</span>
+    <span class="keyword">라한호텔 포항 근처 맛집</span>
+    <span class="keyword">포항 가족식사</span>
+    <span class="keyword">포항 단체모임</span>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">VISIT</div>
+
+  <h2>영일대횟집 방문정보</h2>
+
+  <div class="info-row">
+    <small>ADDRESS</small>
+    <strong>경북 포항시 북구 해안로 227-1</strong>
   </div>
 
-  <!-- 대표 메뉴 -->
-  <section>
-    <div class="section-label">SIGNATURE MENU</div>
-    <h2>영일대횟집 대표 메뉴</h2>
-    <p class="desc">
-      포항 여행 중 즐기기 좋은 대게부터 자연산회와 물회까지
-      영일대횟집의 주요 메뉴를 만나보세요.
-    </p>
-
-    <div class="menu-grid">
-
-      <div class="menu-card">
-        <small>YEONGILDAE SPECIAL</small>
-        <h3>대게<br>스페셜 코스</h3>
-      </div>
-
-      <div class="menu-card">
-        <small>SEASONAL</small>
-        <h3>대방어회</h3>
-      </div>
-
-      <div class="menu-card">
-        <small>NATURAL SASHIMI</small>
-        <h3>참가자미회</h3>
-      </div>
-
-      <div class="menu-card">
-        <small>NATURAL SASHIMI</small>
-        <h3>자연산<br>도다리회</h3>
-      </div>
-
-      <div class="menu-card">
-        <small>POHANG MULHOE</small>
-        <h3>참가자미<br>물회</h3>
-      </div>
-
-      <div class="menu-card">
-        <small>SEAFOOD</small>
-        <h3>신선한<br>해산물</h3>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 신선도 -->
-  <div class="feature">
-    <div class="feature-inner">
-      <div class="section-label">FRESH FROM THE SEA</div>
-      <h2>바다에서 식탁까지,<br>신선함을 담습니다.</h2>
-      <p>
-        가게 맞은편 두호어촌계를 통해
-        어부들이 직접 건져 올린 신선한 자연산 생선을
-        만나볼 수 있습니다.
-      </p>
-    </div>
+  <div class="info-row">
+    <small>PHONE</small>
+    <strong>054-242-0080</strong>
   </div>
 
-  <!-- 물회 -->
-  <section>
-    <div class="section-label">POHANG MULHOE</div>
-    <h2>포항에서 즐기는<br>참가자미 물회</h2>
+  <div class="info-row">
+    <small>PARKING</small>
+    <strong>가게 앞 주차 · 맞은편 두무치 공영주차장</strong>
+  </div>
 
-    <p class="desc">
-      채 썬 오이와 배 위에 참가자미회를 올리고
-      김가루와 깨소금을 더합니다.
-      새빨간 살얼음 과일 육수는 따로 제공되어
-      취향에 맞게 즐길 수 있습니다.
+  <div class="info-row">
+    <small>NEARBY</small>
+    <strong>
+      영일대해수욕장 · 환호공원 · 스페이스워크 · 라한호텔 포항
+    </strong>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">FAQ</div>
+
+  <h2>자주 찾는 정보</h2>
+
+  <details>
+    <summary>영일대횟집에서는 어떤 메뉴를 먹을 수 있나요?</summary>
+    <p>
+      대게, 대방어, 참가자미회, 자연산 도다리회,
+      물회와 다양한 해산물 메뉴를 즐길 수 있습니다.
+      계절 메뉴와 시세 메뉴는 방문 전 확인해 주세요.
     </p>
+  </details>
 
-    <div class="group-box">
-      <strong>포항 전통 방식도 가능합니다.</strong>
-      <p class="desc" style="margin:8px 0 0;">
-        고추장 양념에 비빈 뒤 물을 부어 먹는
-        포항식 물회를 원하시면 고추장을 별도로 요청해 주세요.
-      </p>
-    </div>
-  </section>
-
-  <!-- 단체모임 -->
-  <section>
-    <div class="section-label">GROUP DINING</div>
-    <h2>가족식사부터<br>단체모임까지</h2>
-
-    <p class="desc">
-      가족식사, 회식, 송년회와 연말모임 등
-      인원에 맞춰 이용할 수 있는 좌석을 마련하고 있습니다.
+  <details>
+    <summary>단체모임도 가능한가요?</summary>
+    <p>
+      룸은 4~16명, 단체석은 16~84명 기준으로 이용할 수 있습니다.
+      인원이 많은 경우 방문 전 좌석과 메뉴를 확인해 주세요.
     </p>
+  </details>
 
-    <div class="group-box">
-      <small>ROOM</small>
-      <div class="group-number">4 ~ 16명</div>
-
-      <small>GROUP SEATING</small>
-      <div class="group-number">16 ~ 84명</div>
-
-      <p class="desc" style="margin:8px 0 0;">
-        인원이 많은 모임은 방문 전 좌석과 메뉴를
-        확인해 주세요.
-      </p>
-    </div>
-  </section>
-
-  <!-- 포항 여행 -->
-  <section>
-    <div class="section-label">POHANG TRAVEL</div>
-    <h2>포항 여행과 함께<br>찾기 좋은 영일대횟집</h2>
-
-    <p class="desc">
-      영일대해수욕장과 환호공원, 스페이스워크를 둘러보거나
-      죽도시장과 라한호텔을 이용하는 포항 여행 동선에서
-      식사 장소를 찾을 때 참고해 보세요.
+  <details>
+    <summary>주차는 어디에 하나요?</summary>
+    <p>
+      가게 앞 주차 공간을 이용하거나
+      가게 맞은편 두무치 공영주차장을 이용할 수 있습니다.
     </p>
+  </details>
 
-    <div class="travel-grid">
-
-      <div class="travel">
-        <small>POHANG</small>
-        <strong>영일대해수욕장</strong>
-      </div>
-
-      <div class="travel">
-        <small>HWANHO PARK</small>
-        <strong>환호공원</strong>
-      </div>
-
-      <div class="travel">
-        <small>SPACE WALK</small>
-        <strong>스페이스워크</strong>
-      </div>
-
-      <div class="travel">
-        <small>JUKDO MARKET</small>
-        <strong>죽도시장</strong>
-      </div>
-
-      <div class="travel">
-        <small>POHANG HOTEL</small>
-        <strong>라한호텔 포항</strong>
-      </div>
-
-      <div class="travel">
-        <small>YEONGILDAE</small>
-        <strong>포항 북구 여행</strong>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 검색 주제 -->
-  <section>
-    <div class="section-label">SEARCH GUIDE</div>
-    <h2>영일대횟집 방문 안내</h2>
-
-    <p class="desc">
-      포항 영일대에서 횟집이나 대게, 물회,
-      자연산회를 찾는 분들과 영일대해수욕장·환호공원·
-      스페이스워크 주변 식사 장소를 찾는 분들을 위한
-      영일대횟집 안내입니다.
+  <details>
+    <summary>스페이스워크 방문 후 식사할 수 있나요?</summary>
+    <p>
+      영일대횟집은 환호공원, 스페이스워크,
+      영일대해수욕장과 함께 둘러보기 좋은 영일대 일대에 있습니다.
     </p>
+  </details>
 
-    <div class="keywords">
-      <span class="keyword">포항 영일대 횟집</span>
-      <span class="keyword">포항 영일대 맛집</span>
-      <span class="keyword">포항 대게</span>
-      <span class="keyword">영일대 대게</span>
-      <span class="keyword">포항 물회</span>
-      <span class="keyword">참가자미 물회</span>
-      <span class="keyword">포항 대방어</span>
-      <span class="keyword">포항 자연산회</span>
-      <span class="keyword">환호공원 맛집</span>
-      <span class="keyword">스페이스워크 맛집</span>
-      <span class="keyword">죽도시장 근처 식사</span>
-      <span class="keyword">라한호텔 포항 근처 식사</span>
-      <span class="keyword">포항 가족식사</span>
-      <span class="keyword">포항 단체모임</span>
-    </div>
-  </section>
+</section>
 
-  <!-- 방문 정보 -->
-  <section>
-    <div class="section-label">VISIT</div>
-    <h2>영일대횟집 방문정보</h2>
+<footer>
+  <strong>영일대횟집</strong>
+  경북 포항시 북구 해안로 227-1<br>
+  054-242-0080
+</footer>
 
-    <div class="info-row">
-      <small>ADDRESS</small>
-      <strong>경북 포항시 북구 해안로 227-1</strong>
-    </div>
+</div>
 
-    <div class="info-row">
-      <small>PHONE</small>
-      <strong>054-242-0080</strong>
-    </div>
+<nav class="fixed-bar">
 
-    <div class="info-row">
-      <small>PARKING</small>
-      <strong>가게 앞 주차 · 맞은편 두무치 공영주차장</strong>
-    </div>
-
- <div class="info-row">
- <작음>NEARH</small>
- <strong>영일대해수욕장 · 환호공원 · 스페이스워크 · 라한호텔</strong>
-    </디브>
-  </부분>
-
-  <!-- FAQ -->
-  <부분>
- <div class="section-label">FAQ</div>
- <h2>자주 찾는 정보</h2>
-
-    <세부 사항>
- <summary>영일대횟집에서는 어떤 메뉴를 먹을 수 있나요?</summary>
-      <p>
- 대게, 대방어, 참가자미회, 자연산 도다리회,
- 물회와 다양한 해산물 메뉴를 즐길 수 있습니다.
- 계절 메뉴와 시세 메뉴는 방문 전 확인해 주세요.
-      </p>
- </세부 사항>
-
-    <세부 사항>
- <summary>단체모임도 가능한가요?</summary>
-      <p>
- 룸은 4~16명, 단체석은 16~84명 기준으로 이용할 수 있습니다.
- 인원이 많은 경우 방문 전 좌석과 메뉴를 확인해 주세요.
-      </p>
- </세부 사항>
-
-    <세부 사항>
- <summary>주차는 어디에 하나요?</summary>
-      <p>
- 가게 앞 주차 공간을 이용하거나
- 가게 맞은편 두무치 공영주차장을 이용할 수 있습니다.
-      </p>
- </세부 사항>
-
-    <세부 사항>
- <summary>스페이스워크 방문 후 식사하기 좋은가요?</summary>
-      <p>
- 영일대횟집은 환호공원과 스페이스워크,
- 영일대해수욕장 주변 여행 동선에서 함께 찾기 좋은 위치에 있습니다.
-      </p>
- </세부 사항>
-  </부분>
-
-  <발밑의>
- <강함>영일대횟집</강함>
- 경북 포항시 북구 해안로 227-1<br>
- 054-242-0080
-  </발밑의>
-
-</디브>
-
-<!-- 모바일 하단 고정 버튼 -->
-<nav class="고정 막대">
- <a href="tel:0542420080">전화</a>
-
- <a href="https://m.place.naver.com/restaurant/37725868/home?entry=pll ">
- 네이버 플레이스
+  <a href="tel:0542420080">
+    전화
   </a>
 
- <a href="https://m.place.naver.com/restaurant/37725868/home?entry=pll ">
- 길찾기
+  <a href="https://m.place.naver.com/restaurant/37725868/home?entry=pll">
+    네이버 플레이스
   </a>
-</내비게이션>
 
-</몸>
-</HTML>
+  <a href="https://m.place.naver.com/restaurant/37725868/home?entry=pll">
+    길찾기
+  </a>
+
+</nav>
+
+</body>
+</html>
