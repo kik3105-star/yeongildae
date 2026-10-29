@@ -1123,6 +1123,132 @@ footer strong {
 </div>
 
 </section>
+  <!-- 영일대횟집 메뉴판 및 메뉴 사진 통합 영역 -->
+<section id="restaurant-menu" style="padding:32px 16px;background:#111;color:#fff;">
+
+  <style>
+    #restaurant-menu *{box-sizing:border-box}
+    #restaurant-menu .menu-wrap{max-width:1100px;margin:auto}
+    #restaurant-menu .menu-title{text-align:center;margin-bottom:28px}
+    #restaurant-menu .menu-title small{color:#d7b67b;letter-spacing:3px}
+    #restaurant-menu .menu-title h2{font-size:28px;margin:12px 0}
+    #restaurant-menu .menu-title p{font-size:14px;color:#bbb;line-height:1.7}
+    #restaurant-menu .menu-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+    }
+    #restaurant-menu .menu-card{
+      background:#1d1d1d;
+      border:1px solid #333;
+      border-radius:14px;
+      overflow:hidden;
+    }
+    #restaurant-menu .menu-photo{
+      aspect-ratio:4/3;
+      background:#292929;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:#aaa;
+      font-size:14px;
+      padding:12px;
+    }
+    #restaurant-menu .menu-content{padding:18px}
+    #restaurant-menu .menu-content h3{
+      font-size:19px;
+      margin:0 0 10px;
+    }
+    #restaurant-menu .menu-content p{
+      font-size:14px;
+      line-height:1.7;
+      color:#ccc;
+      margin:0;
+    }
+    @media(max-width:768px){
+      #restaurant-menu .menu-grid{grid-template-columns:1fr}
+      #restaurant-menu .menu-title h2{font-size:25px}
+    }
+  </style>
+
+  <div class="menu-wrap">
+
+    <div class="menu-title">
+      <small>YEONGILDAE RESTAURANT</small>
+      <h2>영일대횟집 메뉴 안내</h2>
+      <p>자연산회부터 포항 물회, 대게와 신선한 해산물까지</p>
+    </div>
+
+    <div class="menu-grid">
+
+      <article class="menu-card" id="menu-board">
+        <div class="menu-photo">메뉴판 사진 영역</div>
+        <div class="menu-content">
+          <h3>영일대횟집 전체 메뉴판</h3>
+          <p>메뉴 구성과 가격을 확인해 보세요. 가격 및 판매 여부는 방문 시점에 따라 달라질 수 있습니다.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" id="menu-crab">
+        <div class="menu-photo">대게 사진 영역</div>
+        <div class="menu-content">
+          <h3>대게 · 대게 스페셜 코스</h3>
+          <p>가족식사와 단체모임에 함께 살펴보기 좋은 대게 메뉴입니다.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" id="menu-sashimi">
+        <div class="menu-photo">자연산회 사진 영역</div>
+        <div class="menu-content">
+          <h3>자연산회 · 참가자미회</h3>
+          <p>담백한 맛과 쫄깃한 식감을 즐기는 자연산 생선회입니다.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" id="menu-mulhoe">
+        <div class="menu-photo">물회 사진 영역</div>
+        <div class="menu-content">
+          <h3>포항 참가자미 물회</h3>
+          <p>참가자미회와 오이, 배, 김가루, 깨소금에 별도로 제공되는 살얼음 과일 육수를 곁들입니다.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" id="menu-special-mulhoe">
+        <div class="menu-photo">스페셜 물회 사진 영역</div>
+        <div class="menu-content">
+          <h3>스페셜 물회</h3>
+          <p>자연산회와 전복, 멍게, 해삼 등 다양한 해산물을 함께 즐기는 물회입니다.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" id="menu-seafood">
+        <div class="menu-photo">해산물 사진 영역</div>
+        <div class="menu-content">
+          <h3>전복 · 멍게 · 해삼</h3>
+          <p>신선한 해산물을 즐길 수 있는 메뉴입니다. 당일 수급에 따라 구성이 달라질 수 있습니다.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" id="menu-flounder">
+        <div class="menu-photo">자연산 도다리 사진 영역</div>
+        <div class="menu-content">
+          <h3>자연산 도다리회</h3>
+          <p>계절과 당일 수급에 따라 판매 여부가 달라질 수 있는 자연산회 메뉴입니다.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" id="menu-yellowtail">
+        <div class="menu-photo">대방어 사진 영역</div>
+        <div class="menu-content">
+          <h3>겨울 제철 대방어</h3>
+          <p>겨울철 제철 메뉴로, 방문 전 판매 여부를 확인해 주세요.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
 <div class="feature">
   <div class="feature-inner">
     <div class="section-label">FRESH FROM THE SEA</div>
