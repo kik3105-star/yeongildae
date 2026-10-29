@@ -627,31 +627,71 @@ footer strong {
   background: url("12-fresh-seafood.jpg") center/cover no-repeat;
 }
 
-/* 기존 '사진' 글자는 숨기기 */
+/* ===== 모바일 최종 보정 ===== */
+
+/* 사진 안의 안내 글자 숨김 */
 .story-photo > span {
   display: none;
 }
-/* 모바일 카드 사진 전체 보이게 수정 */
+
+/* 카드 사진 전체 표시 */
 .story-photo {
-  background-size: contain !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
+  width: 100%;
   aspect-ratio: 1 / 1;
   height: auto !important;
   min-height: 0 !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
-/* 모바일 카드 글자 크기 정리 */
+/* 카드 안쪽 불필요한 여백 방지 */
+.story-card {
+  overflow: hidden;
+}
+
+/* 카드 제목 */
 .story-content h3 {
   font-size: 20px !important;
   line-height: 1.35 !important;
   word-break: keep-all;
 }
 
+/* 카드 설명 */
 .story-content p {
   font-size: 14px !important;
   line-height: 1.7 !important;
   word-break: keep-all;
+}
+
+/* 카드 목록 마지막 여백 정리 */
+.story-grid {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.story-grid .story-card:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* story 섹션 하단 불필요한 공간 제거 */
+.story-grid + * {
+  margin-top: 0;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .story-grid {
+    gap: 24px !important;
+  }
+
+  .story-card {
+    margin-bottom: 0 !important;
+  }
+
+  .story-content {
+    padding-bottom: 22px !important;
+  }
 }
 </style>
 </head>
