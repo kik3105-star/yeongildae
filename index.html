@@ -1491,5 +1491,48 @@ footer strong {
 
 </nav>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const photos = {
+    "menu-board": "yeongildae-menu.jpg",
+    "menu-crab": "01-crab.jpg",
+    "menu-sashimi": "03-flounder.jpg",
+    "menu-mulhoe": "05-mulhoe.jpg",
+    "menu-special-mulhoe": "05-mulhoe.jpg"
+  };
+
+  Object.entries(photos).forEach(([id, file]) => {
+    const card = document.getElementById(id);
+    if (!card) return;
+    const photo = card.querySelector(".menu-photo");
+    if (!photo) return;
+
+    photo.textContent = "";
+    photo.style.backgroundImage = `url("${file}")`;
+    photo.style.backgroundSize = "contain";
+    photo.style.backgroundPosition = "center";
+    photo.style.backgroundRepeat = "no-repeat";
+  });
+
+  const storyFiles = [
+    "01-crab.jpg",
+    "02-yellowtail.jpg",
+    "03-flounder.jpg",
+    "04-wild-flounder.jpg",
+    "05-mulhoe.jpg",
+    "06-seafood.jpg"
+  ];
+
+  document.querySelectorAll(".story-photo").forEach((photo, i) => {
+    if (i >= storyFiles.length) return;
+    photo.style.backgroundImage = `url("${storyFiles[i]}")`;
+    photo.style.backgroundSize = "cover";
+    photo.style.backgroundPosition = "center";
+    const span = photo.querySelector("span");
+    if (span) span.style.display = "none";
+  });
+});
+</script>
+
 </body>
 </html>
