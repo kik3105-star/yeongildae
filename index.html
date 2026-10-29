@@ -631,6 +631,28 @@ footer strong {
 .story-photo > span {
   display: none;
 }
+/* 모바일 카드 사진 전체 보이게 수정 */
+.story-photo {
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  aspect-ratio: 1 / 1;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* 모바일 카드 글자 크기 정리 */
+.story-content h3 {
+  font-size: 20px !important;
+  line-height: 1.35 !important;
+  word-break: keep-all;
+}
+
+.story-content p {
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+  word-break: keep-all;
+}
 </style>
 </head>
 
