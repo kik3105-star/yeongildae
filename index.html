@@ -1491,6 +1491,7 @@ footer strong {
 
 </nav>
 
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const photos = {
@@ -1506,7 +1507,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!card) return;
     const photo = card.querySelector(".menu-photo");
     if (!photo) return;
-
     photo.textContent = "";
     photo.style.backgroundImage = `url("${file}")`;
     photo.style.backgroundSize = "contain";
@@ -1515,12 +1515,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const storyFiles = [
-    "01-crab.jpg",
-    "02-yellowtail.jpg",
-    "03-flounder.jpg",
-    "04-wild-flounder.jpg",
-    "05-mulhoe.jpg",
-    "06-seafood.jpg"
+    "07-beach.jpg",
+    "08-spacewalk.jpg",
+    "09-running.jpg",
+    "10-jukdo-market.jpg",
+    "11-yeongilman-port.jpg",
+    "12-night.jpg"
   ];
 
   document.querySelectorAll(".story-photo").forEach((photo, i) => {
@@ -1533,6 +1533,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+
 
 </body>
 </html>
