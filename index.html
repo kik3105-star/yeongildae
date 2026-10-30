@@ -674,7 +674,7 @@ footer strong {
 @media(max-width:500px){#menu-banners .banner-grid{grid-template-columns:1fr}#menu-banners img{height:auto;max-height:380px}}
 html {scroll-padding-top:75px;}
 </style>
-</head>
+<style>#jukdo-market .story-photo.photo-unavailable,#yeongilman-port .story-photo.photo-unavailable{background:linear-gradient(145deg,#28241c,#111)!important;display:flex;align-items:center;justify-content:center}#jukdo-market .story-photo.photo-unavailable span,#yeongilman-port .story-photo.photo-unavailable span{display:block!important;color:#d7ad62;font-size:18px;font-weight:700;opacity:1}</style></head>
 <body>
 <div class="wrap">
 <header class="top">
@@ -711,10 +711,10 @@ html {scroll-padding-top:75px;}
     영일대횟집의 주요 메뉴를 만나보세요.
   </p>
 <div class="menu-grid">
-<a class="menu-card menu-card-photo" href="#snow-crab-special"><img alt="영일대횟집 대게 스페셜 코스" class="menu-thumb" loading="lazy" src="01-crab.jpg"/><small>YEONGILDAE SPECIAL</small><h3>대게<br/>스페셜 코스</h3></a>
+<a class="menu-card menu-card-photo" href="#snow-crab-special"><img alt="영일대횟집 대게 스페셜 코스" class="menu-thumb" loading="lazy" src="1784111905767.png"/><small>YEONGILDAE SPECIAL</small><h3>대게<br/>스페셜 코스</h3></a>
 <a class="menu-card menu-card-photo" href="#daebangeo"><img alt="영일대횟집 대방어회" class="menu-thumb" loading="lazy" src="02-yellowtail.jpg"/><small>SEASONAL</small><h3>대방어회</h3></a>
-<a class="menu-card menu-card-photo" href="#plaice-sashimi"><img alt="영일대횟집 참가자미회" class="menu-thumb" loading="lazy" src="04-wild-flounder.jpg"/><small>NATURAL SASHIMI</small><h3>참가자미회</h3></a>
-<a class="menu-card menu-card-photo" href="#wild-flounder"><img alt="영일대횟집 자연산 도다리회" class="menu-thumb" loading="lazy" src="03-flounder.jpg"/><small>NATURAL SASHIMI</small><h3>자연산<br/>도다리회</h3></a>
+<a class="menu-card menu-card-photo" href="#plaice-sashimi"><img alt="영일대횟집 참가자미회" class="menu-thumb" loading="lazy" src="03-flounder.jpg"/><small>NATURAL SASHIMI</small><h3>참가자미회</h3></a>
+<a class="menu-card menu-card-photo" href="#wild-flounder"><img alt="영일대횟집 자연산 도다리회" class="menu-thumb" loading="lazy" src="04-wild-flounder.jpg"/><small>NATURAL SASHIMI</small><h3>자연산<br/>도다리회</h3></a>
 <a class="menu-card menu-card-photo" href="#mulhoe"><img alt="영일대횟집 참가자미 물회" class="menu-thumb" loading="lazy" src="05-mulhoe.jpg"/><small>POHANG MULHOE</small><h3>참가자미<br/>물회</h3></a>
 <a class="menu-card menu-card-photo" href="#fresh-seafood"><img alt="영일대횟집 신선한 해산물" class="menu-thumb" loading="lazy" src="06-seafood.jpg"/><small>SEAFOOD</small><h3>신선한<br/>해산물</h3></a>
 </div>
@@ -780,7 +780,7 @@ html {scroll-padding-top:75px;}
 <article class="story-card" id="jukdo-market">
 <div class="story-photo">
 <span>죽도시장 사진</span>
-<img alt="포항 죽도시장" loading="lazy" onerror='this.style.display="none"' src="10-jukdo-market.jpg"/></div>
+<img alt="포항 죽도시장" loading="lazy" onerror='this.style.display="none";this.parentElement.classList.add("photo-unavailable")' src="10-jukdo-market.jpg"/></div>
 <div class="story-content">
 <small>JUKDO MARKET</small>
 <h3>포항 죽도시장</h3>
@@ -795,7 +795,7 @@ html {scroll-padding-top:75px;}
 <article class="story-card" id="yeongilman-port">
 <div class="story-photo">
 <span>영일만항 사진</span>
-<img alt="포항 영일만항" loading="lazy" onerror='this.style.display="none"' src="11-yeongilman-port.jpg"/></div>
+<img alt="포항 영일만항" loading="lazy" onerror='this.style.display="none";this.parentElement.classList.add("photo-unavailable")' src="11-yeongilman-port.jpg"/></div>
 <div class="story-content">
 <small>YEONGILMAN PORT</small>
 <h3>포항 영일만항</h3>
@@ -825,7 +825,7 @@ html {scroll-padding-top:75px;}
 <article class="story-card menu-story" id="snow-crab-special">
 <div class="story-photo">
 <span>대게 스페셜 사진</span>
-<img alt="영일대 대게 스페셜 코스" loading="lazy" onerror='this.style.display="none"' src="01-crab.jpg"/></div>
+<img alt="영일대 대게 스페셜 코스" loading="lazy" onerror='this.style.display="none"' src="1784111905767.png"/></div>
 <div class="story-content">
 <small>SIGNATURE MENU</small>
 <h3>영일대 대게 스페셜 코스</h3>
@@ -855,7 +855,7 @@ html {scroll-padding-top:75px;}
 <article class="story-card menu-story" id="plaice-sashimi">
 <div class="story-photo">
 <span>참가자미회 사진</span>
-<img alt="참가자미회" loading="lazy" onerror='this.style.display="none"' src="04-wild-flounder.jpg"/></div>
+<img alt="참가자미회" loading="lazy" onerror='this.style.display="none"' src="03-flounder.jpg"/></div>
 <div class="story-content">
 <small>NATURAL SASHIMI</small>
 <h3>참가자미회</h3>
@@ -870,7 +870,7 @@ html {scroll-padding-top:75px;}
 <article class="story-card menu-story" id="wild-flounder">
 <div class="story-photo">
 <span>자연산 도다리회 사진</span>
-<img alt="자연산 도다리회" loading="lazy" onerror='this.style.display="none"' src="03-flounder.jpg"/></div>
+<img alt="자연산 도다리회" loading="lazy" onerror='this.style.display="none"' src="04-wild-flounder.jpg"/></div>
 <div class="story-content">
 <small>NATURAL SASHIMI</small>
 <h3>자연산 도다리회</h3>
@@ -984,7 +984,7 @@ html {scroll-padding-top:75px;}
 </div>
 </article>
 <article class="menu-card" id="menu-sashimi">
-<div class="menu-photo" style='background-image:url("03-flounder.jpg");background-size:contain;background-position:center;background-repeat:no-repeat;'></div>
+<div class="menu-photo" style='background-image:url("04-wild-flounder.jpg");background-size:contain;background-position:center;background-repeat:no-repeat;'></div>
 <div class="menu-content">
 <h3>자연산회 · 참가자미회</h3>
 <p>담백한 맛과 쫄깃한 식감을 즐기는 자연산 생선회입니다.</p>
@@ -1217,6 +1217,5 @@ html {scroll-padding-top:75px;}
     길찾기
   </a>
 </nav>
-
 </body>
 </html>
