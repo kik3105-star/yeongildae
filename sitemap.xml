@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-        <loc>https://yeongildae.vercel.app/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://yeongildae.vercel.app/</loc></url>
+  <url><loc>https://yeongildae.vercel.app/mulhoe.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/plaice.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/seafood.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/spacewalk.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/yellowtail.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/hwanho-park.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/lahan-hotel.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/ocean-hills.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/crab-special.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/jukdo-market.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/marine-corps.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/pohang-bukgu.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/wild-flounder.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/botanical-garden.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/yeongildae-beach.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/pohang-travel-course.html</loc></url>
+  <url><loc>https://yeongildae.vercel.app/pohang-places-to-visit.html</loc></url>
 </urlset>
