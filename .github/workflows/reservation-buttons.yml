@@ -1,0 +1,90 @@
+name: Add reservation buttons to Yeongildae pages
+
+on:
+  push:
+    paths:
+      - '.github/workflows/reservation-buttons.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-reservation-buttons:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out existing website without replacing its files
+        uses: actions/checkout@v4
+
+      - name: Update buttons in place
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          place = 'https://m.place.naver.com/restaurant/37725868/home?entry=pll'
+          homepage = Path('index.html')
+          html = homepage.read_text(encoding='utf-8')
+
+          # Only the existing Naver Place label in the homepage bottom bar.
+          pattern = (
+              r'(<nav class="fixed-bar">[\s\S]*?'
+              r'<a href="https://m\.place\.naver\.com/restaurant/37725868/home\?entry=pll">\s*)'
+              r'네이버 플레이스(\s*</a>)'
+          )
+          html_new, count = re.subn(pattern, r'\g<1>예약하기\g<2>', html, count=1)
+          if count:
+              homepage.write_text(html_new, encoding='utf-8')
+              print('Updated: index.html (bottom reservation button)')
+          elif '<nav class="fixed-bar">' in html and '예약하기' in html.split('<nav class="fixed-bar">', 1)[1]:
+              print('Already updated: index.html')
+          else:
+              raise SystemExit('Homepage button not found; stopped to protect the existing design.')
+
+          original_button = f'<a class="btn" href="{place}">네이버 플레이스</a>'
+          reservation_button = (
+              f'<a class="btn reservation-cta" href="{place}" '
+              'target="_blank" rel="noopener noreferrer">예약하기</a>'
+          )
+          css = (
+              '\n/* Reservation CTA: retain the original black-and-gold design */\n'
+              '.panel .reservation-cta{display:block;box-sizing:border-box;width:100%;'
+              'text-align:center;background:#c3a05a;color:#111;font-weight:800;'
+              'margin:13px 0 10px;padding:14px 18px;border-radius:7px}\n'
+              '.panel a.btn:not(.reservation-cta){background:#171717;color:#dbba77;'
+              'border:1px solid #695432;margin-top:0}\n'
+          )
+          updated = []
+          for page in sorted(Path('.').glob('*.html')):
+              if page.name == 'index.html' or page.name.startswith('google'):
+                  continue
+              source = page.read_text(encoding='utf-8')
+              if 'reservation-cta' in source:
+                  continue
+              if original_button not in source:
+                  continue
+              if '</style>' not in source:
+                  raise SystemExit(f'No stylesheet closing tag in {page}; stopped.')
+              result = source.replace(original_button, reservation_button + original_button, 1)
+              result = result.replace('</style>', css + '</style>', 1)
+              page.write_text(result, encoding='utf-8')
+              updated.append(page.name)
+
+          print('Detail pages updated:', ', '.join(updated) if updated else '(already updated)')
+          PY
+
+      - name: Verify changes and commit only modified HTML files
+        shell: bash
+        run: |
+          git diff --check
+          git diff --stat
+          if ! git diff --quiet -- '*.html'; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add -- '*.html'
+            git commit -m 'Add Naver Place reservation buttons to all website pages'
+            git push
+          else
+            echo 'No HTML changes needed.'
+          fi
