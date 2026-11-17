@@ -1,0 +1,81 @@
+
+name: Set homepage search thumbnail
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/search-thumbnail.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-thumbnail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pillow
+        run: python -m pip install Pillow
+
+      - name: Create thumbnail and update homepage
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageOps
+          import re
+
+          source = Path("yeongildae-main-banner.jpg")
+          page = Path("index.html")
+          target = Path("search-thumbnail.jpg")
+
+          if not source.exists() or not page.exists():
+              raise SystemExit("Required source files not found")
+
+          with Image.open(source) as original:
+              photo = ImageOps.exif_transpose(original).convert("RGB")
+              thumbnail = ImageOps.fit(
+                  photo, (1200, 630),
+                  method=Image.Resampling.LANCZOS,
+                  centering=(0.5, 0.5)
+              )
+              thumbnail.save(target, quality=92, optimize=True)
+
+          html = page.read_text(encoding="utf-8")
+
+          tags = [
+              ('property="og:image"',
+               '<meta property="og:image" content="https://yeongildae.vercel.app/search-thumbnail.jpg">'),
+              ('property="og:image:width"',
+               '<meta property="og:image:width" content="1200">'),
+              ('property="og:image:height"',
+               '<meta property="og:image:height" content="630">'),
+              ('name="twitter:card"',
+               '<meta name="twitter:card" content="summary_large_image">'),
+              ('name="twitter:image"',
+               '<meta name="twitter:image" content="https://yeongildae.vercel.app/search-thumbnail.jpg">')
+          ]
+
+          for marker, tag in tags:
+              pattern = r'<meta\b[^>]*' + re.escape(marker) + r'[^>]*>'
+              if re.search(pattern, html, flags=re.I):
+                  html = re.sub(pattern, lambda _: tag, html, count=1, flags=re.I)
+              else:
+                  html = html.replace("</head>", tag + "\n</head>", 1)
+
+          page.write_text(html, encoding="utf-8")
+          print("Search thumbnail created and metadata updated")
+          PY
+
+      - name: Commit changes
+        run: |
+          git add index.html search-thumbnail.jpg
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Add homepage search thumbnail"
+            git push
+          fi
